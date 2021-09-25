@@ -1,0 +1,97 @@
+package com.company;
+import java.util.Scanner;
+
+public class game {
+    public static void main(String[] args) {
+    // for loop
+//        for ( int a=0; a<10;a++){
+//            System.out.println(a);
+//
+//            if (a==3){
+//                System.out.println("break");
+//                continue;                           //break;
+//            }
+//            System.out.println("new we are arrivedd n mumbai");
+//
+//        }
+
+        //While loop
+//        int a=0;
+//            while(a<10){
+//                System.out.println(a);
+//                a++;
+//                if (a>5){
+//                    System.out.println("break");
+//                    break;     // continue
+//                }
+//                System.out.println(" matter is close");
+//            }
+
+
+        // Do whilw loop
+//        int a=0;
+//        do {
+//            System.out.println(a);
+//            a++;
+//            if (a>4){
+//                System.out.println("break");
+//                break;  // continue
+//            }
+//        }while(a<10);
+
+
+
+        // Que 1
+
+//        int n=10;
+//        for(int a=n;a>0;a--){
+//            for (int b =0; b<a; b++){
+//                System.out.print("*");
+//            }
+//            System.out.print("\n");
+//        }
+
+        // Qua 2
+//        int a=0;
+//        int sum =0;
+//        while(a<2){
+//            a++;
+//            sum  = sum + a*2;
+//
+//        }
+//        System.out.println("addition of all number is "+ sum);
+
+        // qua 3
+//        int a =1;
+//        while(a<11 ){
+//            System.out.println(a*5);
+//            a++;
+//        }
+
+
+        // qua 4
+//        int a =10;
+//        while(a>=1 ){
+//            System.out.println(a*5);
+//            a--;
+//        }
+
+        // que 5
+//        int a =1;
+//        int  sum =1;
+//        while ( a<5){
+//            a++;
+//            sum = (sum*a);
+//        }
+//        System.out.println(" the factorial is "+sum);
+
+//        que 5 using for loop
+//        int sum=1;
+//        for(int a =1 ; a<=5;a++){
+//            sum= (sum*a);
+//        }
+//        System.out.println(sum);
+
+
+    }
+}
