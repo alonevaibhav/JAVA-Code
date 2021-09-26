@@ -1,0 +1,83 @@
+class game {
+    public static void main(String[] args) {
+//        int[] car=new int[5];
+//                car[0]=45;
+//                car[1]=48;
+//                car[2]=44;
+//                car[3]=455;
+//                car[4]=485;
+//        System.out.println(car[4]);
+
+        //Diffrent way to assing the arrey
+//        int [] car = {14,52,4,58,};
+//
+//        int[] car=new int[5];
+//
+//        int [] car ;
+//        car[0]=52;
+
+
+//        //by using for loop
+//        int[] car=   {14,52,65,35,15};        //  for this Code we below Action is perform
+//        for (int a =0;a<5;a++){
+//            System.out.println(car[a]);
+//        }
+
+        // to find out the lengh of the loop
+//        System.out.println(car.length);
+
+        // for each element
+//        for (int element: car){
+//            System.out.println(element);
+//        }
+
+        //// Multidiamentional array
+
+        // Decration Of 2D array
+
+        int [][]tree= new int[2][3];
+        tree[0][0] =1231;
+        tree[0][1]=1243;
+        tree[0][2]=1523;
+        tree[1][0]=1233;
+        tree[1][1]=1273;
+        tree[1][2]=12322;
+        System.out.println(tree.length);
+//        System.out.println(tree[0][1]);
+        for (int i= 0;i<2;i++){
+            for (int j=0;j<tree[i].length;j++){
+                System.out.print(tree[i][j]);
+                System.out.print(" ");
+            }
+            System.out.print("\n");
+        }
+
+
+
+
+        // Decration Of 3D array
+
+//        int [][][] tree= new int[2][3][2];
+//        tree[0][0][0] =1231;
+//        tree[0][1][0]=1243;
+//        tree[0][2][0]=1523;
+//        tree[1][0][0]=1233;
+//        tree[1][1][0]=1273;
+//        tree[1][2][0]=12322;
+//        tree[0][0][0]=502;
+//        System.out.println(tree.length);
+//        System.out.println(tree[0][1]);
+//        for (int i= 0;i<2;i++){
+//            for (int j=0;j<tree[i].length;j++){
+//                for (int k=0;k<tree[i][j].length;k++){
+//                    System.out.print(tree[i][j][k]);
+//                    System.out.print(" ");
+//                }
+//
+//            }
+//            System.out.print("\n");
+//        }
+
+
+    }
+}
