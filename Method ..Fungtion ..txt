@@ -1,0 +1,63 @@
+public class xdf {
+    //CASE1
+    static int ooi ( int a, int b){
+     int z=a +b;
+     a=522;
+     return z;
+    }
+     int opp ( int a, int b){
+     int z=a +b;
+     return z;
+    }
+    // This below three worlds "umm" are the method overloding
+    // in this method overloding we have write different code as another, same-same code is show the error
+    static void umm(){
+        System.out.println(" hello EveryOne");
+    }
+    static void umm(int a, int b){
+        System.out.println(" hello EveryOne this is vaibhav alone");
+    }
+    static int umm(int b){
+        System.out.println("  vaibhav alone");
+        return 5;
+    }
+    //CASE2
+    static void kko(int []  arr){
+        arr [2]=101;
+    }
+
+    public static void main(String[] args) {
+        // CASE 1
+        // in the fungtion . copy go to the method so that actual value can't be can be change
+        // after overwring like x=552;
+        int a1=15;           // with Static word
+        int b1=15;
+        int c1=ooi(a1,b1);
+        System.out.println(c1);
+
+        int a=25;         // without static word
+        int b=15;
+        xdf oop= new xdf();         //object
+        int c=oop.opp(a,b);          //Method of print the statment
+        System.out.println(c);
+        // Method Overloding
+        umm();
+        umm(500,800);
+        umm(15);
+
+        //CASE 2
+        // when the object go to the method it change the value & array is the object
+        int [] arr={55,65,68,36};
+        kko(arr);
+        System.out.println( arr[2]);
+
+
+
+
+
+
+
+    }
+
+
+}
