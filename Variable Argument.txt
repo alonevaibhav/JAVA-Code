@@ -1,0 +1,37 @@
+import java.util.concurrent.RecursiveTask;
+
+class xdf {
+    //This is the type of Comman method
+
+    static int x(int a,int b){
+        int sum=a+b;
+        return sum;
+    }
+    //This is the type of Variable Argument method
+
+    static int x(int ...arr){
+        int sum=0;
+        for (int a=0;a<arr.length;a++){
+            sum=sum+arr[a];
+        }
+        return sum;
+    }
+    static int z(int b){
+        int xx=1;
+        for(int a=1;a<=b;a++){
+            xx=xx*a;
+        }
+        return xx;
+    }
+    public static void main(String[] args) {
+        //This is the type of Comman method
+        System.out.println("add the two value "+ x(12,36));
+        //This is the type of Variable Argument method
+        System.out.println("add the two value "+ x(12,36,56));
+        System.out.println("add the two value "+ x(12,36,52));
+        System.out.println("add the two value "+ x(12,36,52,55,85));
+
+        System.out.println("Factorial of 5 is " +z(5));
+
+    }
+}
