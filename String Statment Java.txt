@@ -59,6 +59,11 @@ class op{
 
         String value ="VaiBhav";
         System.out.println(value.equalsIgnoreCase("vaiBhAv")); */
+	
+	// This is the Delete to acsses the delete feture we want to use StringBuffer if and only if then delete option is available
+	 StringBuffer king = new StringBuffer("his father is the professor");
+        oop.delete(4,10);
+        System.out.println(king);
 
 
         //Problems based on abut string
