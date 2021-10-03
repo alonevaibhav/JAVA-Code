@@ -1,0 +1,144 @@
+//    creating the class
+class Employee{
+    String name;
+    int rollnum;
+    float mark;
+    public void rrq(){
+        System.out.println("name of student is "+ name);
+        System.out.println("rollnum of student is "+ rollnum);
+        System.out.println("mark of student is "+ mark);
+    }
+
+}
+
+  // Quetion 1
+class company {
+      String name;
+      int income;
+
+      public String getName() {
+          return name;
+      }
+
+      public void setName(String n) {
+          name = n;
+      }
+
+      public int getIncome() {
+          return income;
+      }
+  }
+
+//Que2
+class square{
+    int side;
+    public int area(){
+       int p=side*side;
+        return p;
+    }
+    public int paremeter(){
+         int ss=side*4;
+        return ss;
+    }
+
+}
+
+//que3
+class rectangle {
+    int length;
+    int breath;
+
+    public int area() {
+        int p = length * breath;
+        return p;
+    }
+
+    public int paremeter() {
+        int ss = 2 * (length + breath);
+        return ss;
+    }
+
+}
+    class tommy{
+        public void run(){
+            System.out.println("tommy run ");
+        }
+        public void hit(){
+            System.out.println("hit the man ");
+        }
+        public void fire(){
+            System.out.println("toomy fire ");
+        }
+
+}
+
+
+public class lol{
+    public static void main(String[] args) {
+//        WE have to print the following Data so basic type to print this data is like this
+//        but this is not a good practice to code
+//        String name="Vaibhav alone";
+//        int rollnum=55;
+//        float mark=88.32f;
+//        System.out.println(name);
+//        System.out.println(rollnum);
+//        System.out.println(mark);
+
+//       * Now to can use class to print this data in c language this is called as Structure *
+//        after creating the class following method is
+//        Employee op= new Employee();
+//        op.name="vaibhav alone";
+//        op.rollnum=55;
+//        op.mark=87.9f;
+
+// //        this is also we can print the above statement but we have batter option
+//        System.out.println(op.name);
+//        System.out.println(op.rollnum);
+//        System.out.println(op.mark);
+
+//        the batter option is direct declare the print statement n class
+//        op.rrq();
+//
+// //        one onother example
+//        System.out.println("\t");
+//        Employee oc= new Employee();
+//        oc.name="jay t";
+//        oc.rollnum=95;
+//        oc.mark=99.99f;
+//        oc.rrq();
+
+//        so that we use class
+
+        // Queation
+
+// n// Que 1
+//        company vaibhav=new company();
+//        vaibhav.setName("vaibhavAlone");
+//        System.out.println(vaibhav.getName());
+//        vaibhav.income=1256;
+//        System.out.println(vaibhav.getIncome());
+
+//        que2
+
+//        square sq= new square();
+//        sq.side=5;
+//        System.out.println(sq.area());
+//        System.out.println(sq.paremeter());
+
+// //        que3
+//        rectangle rect= new rectangle();
+//        rect.length=2;
+//        rect.breath=4;
+//        System.out.println(rect.area());
+//        System.out.println(rect.paremeter());
+
+        // que 4
+            tommy too= new tommy();
+            too.hit();
+            too.fire();
+            too.run();
+
+
+
+    }
+}
