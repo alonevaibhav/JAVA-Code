@@ -1,0 +1,134 @@
+class acces {
+    //    private acces modifire - when we want to apply this modifire we have to use getter & setter
+    private String coName;
+
+    public String getCoName() {
+        return coName;
+    }
+
+    public void setCoName(String i) {
+        coName = i;
+    }
+}
+class constructor1{
+    // Constructor is not different is the part of acces modifire
+    private int num1;
+    String name;
+    public int getNum1(){
+        return num1;
+    }
+    public void setNum1(int n){
+        num1=n;
+    }
+    //by using below Syntax we directly initialize the value without using setter value - this is the working of constructor
+    public constructor1(){
+        num1=888;
+        name="its me papa bolte";
+    }
+}
+// quetions 1
+class cylinder{
+    int breath;
+    int height;
+    String nmae;
+    float radius;
+    float surArea;
+    public int getBreath(){
+        return breath;
+    }
+    public void setBreath(int n){
+        breath=n;
+    }
+    public int getHeight(){
+        return 12;     //We can give direct return value
+    }
+    public void setHeight(int o){
+        height=o;
+    }
+    public String getNmae() {
+        return nmae;
+    }
+    public void setNmae(String nmae) {
+        this.nmae = nmae;
+    }
+    public float getSurArea() {
+        return surArea;
+    }
+    public void setSurArea(float surArea) {
+        this.surArea = surArea;
+    }
+
+    public float getRadius() {
+        return radius;
+    }
+    public void setRadius(float radius) {
+        this.radius = radius;
+    }
+    // when
+    public double areasur() {
+        return 2*3.142*radius*radius*breath*height ;
+    }
+
+    public cylinder(){
+        breath=88;
+//        height=6;
+        nmae="LPG";
+        radius=3.14f;
+        surArea=2.5f*3.7f*radius;
+
+    }
+
+}
+// question2
+class newClass{
+    int num1;
+    int num2;
+    public newClass(){
+         this.num1=5;
+         this.num2=5;
+    }
+    public newClass(int num1,int num2){
+         this.num1=num1;
+         this.num2=num2;
+    }
+    public int opx(){
+        return num1*num2;
+    }
+}
+    class acces_modifire{
+         public static void main(String[] args) {
+             // **** private acces modifire ****
+             //    acces_modifire = private , public , default , protected
+             //     for the using of Private acces modifire we want to use Getter & setter
+             //    getter & setter
+        acces ox= new acces();
+        ox.setCoName("vaibhav alone");
+        System.out.println(ox.getCoName());
+
+        // constructor1
+        constructor1 op= new constructor1();
+        System.out.println(op.getNum1());
+        System.out.println(op.name);
+
+             System.out.println("\t\t ");
+
+        // question & answer
+             cylinder cy=new cylinder();
+             System.out.println(cy.getBreath());
+             System.out.println(cy.getHeight());
+             System.out.println(cy.getNmae());
+//             cy.setSurArea(2.5f*3.7f*cy.radius);  //it may initiazise here or in Constructor also & also in return value
+             System.out.println(cy.getSurArea());
+             System.out.println(cy.areasur());
+
+             // question 2
+             newClass xo=new newClass();
+             System.out.println(xo.opx());
+
+
+
+
+
+
+         }
+}
