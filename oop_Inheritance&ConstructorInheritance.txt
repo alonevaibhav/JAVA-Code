@@ -1,0 +1,86 @@
+import java.sql.Statement;
+
+class animal {
+    String name;
+    String namee;
+
+    public String getNamee(){
+        return namee;
+    }
+    public void setNamee(String namee){
+        this.namee=namee;
+    }
+     //  when we set constructor then we able to apply the inheritance
+    public animal(){
+        namee="vaibhav";
+    }
+}
+class cat extends animal{
+    private String nickName;
+    public String getNickName() {
+        return nickName;
+    }
+    public void setNickName(String nickName) {
+        this.nickName = nickName;
+    }
+    cat(){
+        System.out.println("print the animaton");
+    }
+
+}
+         // Constructor in Inheritance
+class papa{
+    papa(){
+        System.out.println("papa is here");
+    }
+    papa(int x){
+        System.out.println("papa is here "+ x);
+    }
+}
+class child extends papa{
+    child(){
+        System.out.println("child is here");
+    }
+    child(int x, int y){
+        //when we use super keyword then ww cna call the anather statment ..its ment thet we call the agrument
+        super(x);
+        System.out.println("child is here "+ y);
+    }
+}
+class grandchild extends child{
+    grandchild(){
+        System.out.println("grandchild is here");
+    }
+    grandchild(int x,int y, int z){
+        super(x, y);
+        System.out.println("grandchild is here "+ z);
+    }
+}
+class Inheritance {
+    public static void main(String[] args) {
+//        animal oxx=new animal();
+//        oxx.name="Vaibhav Alone";
+//        System.out.println(oxx.name);
+////        oxx.setNamee("Vaibhav alone");
+//        System.out.println(oxx.getNamee());
+//
+//        //next class . className- cat
+//        cat cc=new cat();
+//        cc.setNickName("monuu");
+//        System.out.println(cc.getNickName());
+//        System.out.println(cc.getNamee());
+
+        // ****Constructor in Inheritance
+//        without agrument Statement
+        papa j=new papa();
+        child d=new child();
+
+        //with arument statment
+//        papa p=new papa(12);
+//        child c=new child(12,32);
+        grandchild g=new grandchild(12,65,85);
+
+    }
+
+}
+
