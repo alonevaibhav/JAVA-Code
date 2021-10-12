@@ -95,6 +95,20 @@ class newClass{
         return num1*num2;
     }
 }
+//que 3
+class Box{
+    int area;
+    int l,m,t;
+    public void setArea(int x,int y) {
+        l=x; m=y;
+    }
+    public int getArea(){
+        return l*m;
+    }
+    Box(){
+      l=10;m=10;
+    }
+}
     class acces_modifire{
          public static void main(String[] args) {
              // **** private acces modifire ****
@@ -124,6 +138,11 @@ class newClass{
              // question 2
              newClass xo=new newClass();
              System.out.println(xo.opx());
+             
+             //que3
+          //  Box c= new Box();
+//        c.setArea(12,12);
+//        System.out.println(c.getArea());
 
 
 
