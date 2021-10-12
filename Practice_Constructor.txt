@@ -1,0 +1,35 @@
+
+class Box{
+    int area;
+    int l,m,t;
+    public void setArea(int x,int y) {
+        l=x; m=y;
+    }
+    public int getArea(){
+        return l*m;
+    }
+    Box(){
+      l=10;m=10;
+    }
+}
+// question2
+class newClass{
+    int num1,num2;
+    public newClass(){
+        this.num1=5;
+        this.num2=5;
+    }
+    public int opx(){
+        return num1*num2;
+    }
+}
+public class Practice_code {
+    public static void main(String[] args) {
+        Box c= new Box();
+        c.setArea(12,12);
+        System.out.println(c.getArea());
+
+        newClass xo=new newClass();
+        System.out.println(xo.opx());
+    }
+}
