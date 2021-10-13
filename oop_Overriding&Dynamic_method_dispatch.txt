@@ -1,0 +1,55 @@
+// Override
+class first{
+    public void bb(){
+        System.out.println("my name is lakhan");
+    }
+}
+class second extends first{
+    @Override
+    public void bb(){
+        System.out.println("my name is lakhan & ram");
+    }
+}
+//Dynamic method dispatch
+class phone {
+    // all the method of phone class is run
+    void ring (){
+        System.out.println("my phone is ringing...pick up");
+    }
+    void song  (){
+        System.out.println("turn on the song...in full volume");
+    }
+}
+class smartphone extends phone{
+    //which method override form phone class only this method able
+    // to run other method is not run in Dynamic method dispatch
+    void ring (){
+        System.out.println("my phone is ringing...");
+    }
+    void song  (){
+        System.out.println("turn on the song...");
+    }
+//    void game(){
+//        System.out.println("play game..");    // it give error -- Not allowed
+//    }
+
+}
+public class overridding {
+    public static void main(String[] args) {
+        first f= new first();
+        f.bb();
+        second se=new second();
+        se.bb();
+
+        //Dynamic method dispatch
+        // it run the method of smartphone class becz. phone is reference & smartphone is the object 
+        phone pp= new smartphone();
+        pp.ring();
+        pp.song();
+//        pp.game();  // it give error -- Not allowed
+
+
+
+
+    }
+}
