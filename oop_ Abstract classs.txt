@@ -1,0 +1,34 @@
+// Abstract classs 
+abstract class fruit{
+    void container(){
+        System.out.println("i neet fruit");
+    }
+    abstract  void  buy();  // if ou use access medifire then all th esubclass we have to apply access M. like PUBLIC
+}
+class mango extends fruit{
+    public void buy(){
+        System.out.println("Mango is king of fruit ");
+    }
+//    mango(int x){
+//        System.out.println("mangoes is testy");   //Constructor run without any arror in abstract
+//    }
+}
+ class banana extends fruit{
+     void buy(){
+         System.out.println("banana is very testy");
+     }
+ }
+abstract class bigfruit extends fruit{
+    void ton(){
+        System.out.println("Fruit in ton ");
+    }
+}
+public class xoxooo {
+    public static void main(String[] args) {
+//        fruit fo= new fruit() ---- not allowed
+        mango mn=new mango();   //---- allowed
+        mn.buy();
+        banana ban=new banana();
+        ban.buy();
+    }
+}
