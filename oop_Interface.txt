@@ -1,0 +1,54 @@
+  interface fruit{
+    void kg();
+    void dozen();
+    void ton();
+    String [] network();
+    // Private Method can be use in Interface but we can not create the object of private method 
+    private void ringBeries(){
+        System.out.println("very Toxic Fruit in World");
+    }
+    // Default Method use to sometime we have to declare the value in interface so then we use Defalt method
+    default void beries(){
+        ringBeries();
+        System.out.println("vary rare baries ");
+    }
+  }
+  class stobery{
+    void pis(){
+        System.out.println("10rs per pis ");
+    }
+    public int xoxo(int a){
+        System.out.println("this is value "+a);
+        return 0;
+    }
+  }
+  class apple extends stobery implements fruit{
+      public void kg(){
+        System.out.println("100rs kg");
+        }
+      public void dozen(){
+          System.out.println("50rs dozen");
+        }
+      public void ton(){
+          System.out.println("1k per ton");
+        }
+      public String [] network(){
+          System.out.println("my network is 5G");
+          String [] netlist={"airtel","vodaphone"};
+          return netlist;
+      }
+  }
+public class xoxooo {
+    public static void main(String[] args) {
+        apple app= new apple();
+        app.dozen();
+        app.pis();
+        app.beries();
+        app.xoxo(12);
+       String [] xo= app.network();
+        for (String item:xo) {
+            System.out.print(item+"\t");
+        }
+
+    }
+}
