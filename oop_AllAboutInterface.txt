@@ -1,0 +1,170 @@
+// ***interface ***
+// We can not modify the value of who declare in interface like a=12 we can not modify
+// We can implement the multiple interface in one class
+// IT  is mendatory to all the object of interface shoud be declare in child class
+
+interface fruit{
+    void kg();
+    void dozen();
+    void ton();
+    // ***Defalt & Private Method***
+    // Private Method can be use in Interface but we can not create the object of private method 
+    private void ringBeries(){
+        System.out.println("very Toxic Fruit in World");
+    }
+    // Default Method use to sometime we have to declare the value in interface so then we use Defalt method
+    default void beries(){
+        ringBeries();
+        System.out.println("vary rare baries ");
+    }
+  }
+//  *** Inheritance in Interfaces ***
+// We can extend the interface but can't implement.
+//interface fruitJuice implements fruit  -- error
+  interface fruitJuice extends fruit{
+    void mangoJuice();
+  }
+  class stobery{
+    void pis(){
+        System.out.println("10rs per pis ");
+    }
+    public int xoxo(int a){
+        System.out.println("this is value "+a);
+        return 0;
+    }
+  }
+  class apple extends stobery implements fruit{
+    // all the method of interface class should be PUBLIC
+      public void kg(){
+        System.out.println("100rs kg");
+        }
+      public void dozen(){
+          System.out.println("50rs dozen");
+        }
+      public void ton(){
+          System.out.println("1k per ton");
+        }
+      public String [] network(){
+          System.out.println("my network is 5G");
+          String [] netlist={"airtel","vodaphone"};
+          return netlist;
+      }
+  }
+//      *** Polymorphism in Interfaces ***
+interface tv{
+    void song ();
+}
+interface bed{
+    void sleep();
+}
+class  fan{
+    void airCool(){
+        System.out.println("it cool the air");
+    }
+}
+class Home extends fan implements tv,bed {
+    public void song() {
+        System.out.println("please play the song ");
+    }
+
+    public void sleep() {
+        System.out.println("please sleep");
+    }
+
+    void airCool() {
+        System.out.println("it cool the air cll");
+    }
+}
+
+//Queation & Answer
+
+//Que1
+abstract class pen{
+   abstract void write();
+    abstract void reFill();
+}
+class noteBook extends pen{
+    void write(){
+        System.out.println("Write Something");
+    }
+    void reFill(){
+        System.out.println("Fill the pen");
+    }
+}
+
+//Que2
+class Monkey{
+    void jump(){
+        System.out.println("jump");
+    }
+    void bite(){
+        System.out.println("bite");
+    }
+}
+interface basicAnimal{
+    void eat();
+}
+class Human extends Monkey implements basicAnimal{
+   public void eat(){
+        System.out.println("eating...");
+    }
+}
+
+//Question3
+
+abstract class Telephone{
+    void ring(){
+        System.out.println("Ringing...");
+    }
+    void lift(){
+        System.out.println("lifting...");
+    }
+    abstract void disConnect();
+
+}
+ class smartTelephone extends Telephone{
+     void disConnect(){
+         System.out.println("call can't pick up");
+     }
+     void videoCall(){
+         System.out.println("Video call");
+     }
+ }
+
+public class xoxooo {
+    public static void main(String[] args) {
+        apple app= new apple();
+        app.dozen();
+        app.pis();
+        app.beries();
+        app.xoxo(12);
+       String [] xo= app.network();
+        for (String item:xo) {
+            System.out.print(item+"\t");
+        }
+        System.out.println("\t");
+        
+        //      *** Polymorphism in Interfaces ***
+        tv onTheTv= new Home(); // Very importent
+        onTheTv.song();
+
+        System.out.println("\t");
+
+//        Question & Answer
+//        Quetion1
+         noteBook note= new noteBook();
+         note.reFill();
+
+        System.out.println("\t");
+//         question2
+        Human humanbody= new Human();
+        humanbody.eat();
+
+        System.out.println("\t");
+//        Question3
+        Telephone tel= new smartTelephone();
+        tel.disConnect();
+
+
+    }
+}
